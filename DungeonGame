@@ -24,7 +24,7 @@ class Wizard:
         return weakness
     
     def deal_damage(self, target):
-        damage = random.randint(0, 10)
+        damage = random.randint(1, 10)
         target.hp = target.hp - damage
         target.hp = max(target.hp, 0)
 
@@ -48,7 +48,7 @@ class DungeonGame:
                 | |     | |     '____'          
                 / \\      \\ \\                    
                 ---       ---''')
-        print(f"The ogre has {hp} health points left! Keep fighting to defeat him!")  
+        print(f"The ogre has {hp} health points left!")  
 
     
     def print_deadscreen(self):
