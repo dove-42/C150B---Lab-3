@@ -1,0 +1,99 @@
+import random
+
+class Ogre:
+    def __init__(self):
+        self.hp = 30
+        self.prompts = {"int": "Whole numbers make me nervous.",
+                "float": "Decimals have always freaked me out.",
+                "str": "Sticks and stones will break my bones, and words will also hurt me."
+            }
+        self.noises = ["Augh!", "No!", "My eye!", "Oargh!"]
+    
+    def get_distress_noise(self):
+        idx = random.randint(0, 3)
+        return self.noises[idx]
+
+
+class Wizard:
+    def __init__(self):
+        self.spells = ["int", "float", "str"]
+
+    def find_weakness(self):
+        idx = random.randint(0, 2)
+        weakness = self.spells[idx]
+        return weakness
+    
+    def deal_damage(self, target):
+        damage = random.randint(0, 10)
+        target.hp = target.hp - damage
+        target.hp = max(target.hp, 0)
+
+
+class DungeonGame:
+    def load_instructions(self):
+        print('''An orge has invaded our lands and is attacking our peaceful village. You must defeat him through your magic! To cast a spell, convert the variable "spell" to the type you think the ogre is weak to. Example: spell = int(spell). He will give you hints as to what will defeat him. Good luck! The world of python depends on you!\n''')
+
+    def print_splash(self, prompt, hp):
+        print(f'''                    \\     /    ({prompt})
+               __--__)---( __   /
+              /      ( {{o}})   \\
+             / (  \\   \\__/    ))
+            /  |''/,     ,  /  )
+            |  | /         /\\ |
+            |  ||          | ||
+            |-nn\\\\nnnnnOnn-| ||  |\\
+            |    \\\\---,    | ||  | \\
+            =====(_)========(((==XXX>
+                | |     | |    '/   \\           
+                | |     | |     '____'          
+                / \\      \\ \\                    
+                ---       ---''')
+        print(f"The ogre has {hp} health points left! Keep fighting to defeat him!")  
+
+    
+    def print_deadscreen(self):
+        print('''The ogre has been defeated!
+                     __
+                   /    \\
+                  | RIP  | 
+                  |      |
+                  --------''')
+
+
+    def check_for_hit(self, weakness, spell):
+        if weakness in spell.lower():
+            return True
+        return False
+
+
+    def play_round(game, player, ogre):
+        weakness = player.find_weakness()
+        prompt = ogre.prompts[weakness]
+        game.print_splash(prompt, ogre.hp)
+        spell = input("What spell would you like to cast? => ")
+        if game.check_for_hit(weakness, spell):
+            player.deal_damage(ogre)
+            print("\nYou hit him! Keep going!")
+            game.print_splash(ogre.get_distress_noise(), ogre.hp)
+        else:
+            spell = input("Hmm that didn't seem to hit. Are you sure you're casting the right spell? Try casting it one more time! => ")
+            if game.check_for_hit(weakness, spell):
+                player.deal_damage(ogre)
+                print("\nYour spell worked that time!")
+                game.print_splash(ogre.get_distress_noise(), ogre.hp)
+            else:
+                print("It seems like your magic might be blocked. Let's see if you can get him next time!")
+
+
+def main():
+    game = DungeonGame()
+    player = Wizard()
+    ogre = Ogre()
+
+    game.load_instructions()
+
+    while(ogre.hp > 0):
+        game.play_round(player, ogre)
+
+    game.print_deadscreen()
+
