@@ -61,7 +61,9 @@ class DungeonGame:
 
 
     def check_for_hit(self, weakness, spell):
-        if weakness in spell.lower():
+        valid_hit = f"spell={weakness}(spell)"
+        spell = spell.replace(" ", "")
+        if spell == valid_hit:
             return True
         return False
 
