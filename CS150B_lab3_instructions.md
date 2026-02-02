@@ -65,8 +65,8 @@ Lets break it down!
 
 1) Fill in the error to make the print work!
 2) Fix the error to make the print work!
-3) Create a print statement by copying and pasting the line below:
-```python3
+3) Create a print statement using the line below. You can copy and paste it:
+```
 Yer a Wizard Harry!
 ```
 4) Fill in the error to make the variable work!
