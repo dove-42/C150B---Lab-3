@@ -1,6 +1,6 @@
 # Lab 03 - Comments, Printing, Type Casting, Oh my!
 ## Introduction
-Welcome to lab! This lab is going to give you some more practice with varibles, printing, input, and type casting. It will also give you some practice with comments.
+Welcome to lab! This lab is going to give you some more practice with **variables**, **printing**, **input**, and **type casting**. It will also give you some practice with **comments**.
 
 ## Step 1 (Comments) #️⃣
 Before getting into printing and type casting, one useful feature most programming languages have are **comments** (#)! 
