@@ -21,9 +21,11 @@ You can tell you have done it right as comments have a decreased opacity as show
 
 Next for Step 1, there is some code in **#Step1** we currently dont want. However, rather then deleting it, we might have a use for it later, so commenting it out would be the best idea.
 
-- Comment out the code in **#Step1**:
+- Comment out all the code in **#Step1**:
 ```python3
 print("I'm code that wants to be commented!")
+
+# print("Im good")
 ```
 **TIP:** When it comes to comments, you can add and remove multiple comments if you highlight the code and click: **CTRL + /**
 
