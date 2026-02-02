@@ -67,7 +67,7 @@ Lets break it down!
 2) Fix the error to make the print work!
 3) Create a print statement by copying and pasting the line below:
 ```python3
-Your a Wizard Harry!
+Yer a Wizard Harry!
 ```
 4) Fill in the error to make the variable work!
 5) Fix the error to make the variable work!
