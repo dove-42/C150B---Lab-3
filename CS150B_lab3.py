@@ -1,6 +1,5 @@
 from DungeonGame import play_game()
 #Step 1
-
 Debri = "Junk"
 print("Boulder")
 print("Rubble")
