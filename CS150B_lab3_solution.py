@@ -11,7 +11,7 @@ num2 = float(input("Please enter a decimal number => "))
 
 lucky_num = num1 / num2
 
-print("Hello", name, "! Your lucky number is", lucky_num, "today.")
+print("Hello", name, "! Your lucky number is", lucky_num, "today!")
 
 
 #step 4
