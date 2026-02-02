@@ -63,13 +63,13 @@ Lets break it down!
 
 ### **Step 2 will get you practice in understanding what and how to make prints and variables!**
 
-1) Fill in the error to make the print work!
+1) Figure what is missing in the print statement thats causing the error!
 2) Fix the error to make the print work!
 3) Create a print statement using the line below. You can copy and paste it:
 ```
 Yer a Wizard Harry!
 ```
-4) Fill in the error to make the variable work!
+4) Figure what is missing for the variable thats causing the error!
 5) Fix the error to make the variable work!
 6) Create a print statement using both variables above and format it like the line below! If done correctly, it should look like this:
 ```
