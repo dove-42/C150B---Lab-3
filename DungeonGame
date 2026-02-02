@@ -15,7 +15,8 @@ class Ogre:
 
 
 class Wizard:
-    def __init__(self):
+    def __init__(self, name):
+        self.name = name
         self.spells = ["int", "float", "str"]
 
     def find_weakness(self):
@@ -87,9 +88,9 @@ class DungeonGame:
                 print("It seems like your magic might be blocked. Let's see if you can get him next time!")
 
 
-def main():
+def play_game(name):
     game = DungeonGame()
-    player = Wizard()
+    player = Wizard(name)
     ogre = Ogre()
 
     game.load_instructions()
@@ -98,4 +99,5 @@ def main():
         game.play_round(player, ogre)
 
     game.print_deadscreen()
+    print(f"Thank you {player.name} for protecting our village!")
 
