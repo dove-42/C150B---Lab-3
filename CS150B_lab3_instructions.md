@@ -3,7 +3,30 @@
 Welcome to lab! This lab is going to give you some more practice with varibles, printing, input, and type casting. It will also give you some practice with comments.
 
 ## Step 1 (Comments)
-FIXME - fill in with Gino's instructions for step 1
+Before getting into printing and type casting, one useful feature most programming languages have are **comments**! 
+Comments are a great way to give information within the code without interfering with the code itself, almost like a description to a picture! 
+Not only that, but you can comment out any code you don't want to test or to set aside code.
+```python3
+# Hello! I am a comment!
+
+Hello, I am not a comment!
+```
+To make comments, place a hashtag (#) on the left side before your code or your description. 
+You can tell you have done it right as comments have a decreased opacity as shown above!
+
+- For Step 1, your goal is to set your name and major underneath **#Step1** and have it commented out:
+```python3
+# Name: Boby the Bob, Major: Musical Intstruments
+```
+
+Next for Step 1, there is some code in **#Step1** we currently dont want. However, rather then deleting it, we might have a use for it later, so commenting it out would be the best idea.
+
+- Comment out the code in **#Step1**:
+```python3
+print("I'm code that wants to be commented!")
+```
+**TIP:** When it comes to comments, you can add and remove multiple comments if you highlight the code and click: **CTRL + /**
+
 
 ## Step 2 (Printing and Variables)
 FIXME - fill in with Gino's instructions for step 2
@@ -45,7 +68,7 @@ Ensure you are following the format exactly (case, punctuation, spacing).
 
 ## Step 4 (Defeat the Ogre!)
 Now that you've had some more practice with casting, let's play a game. You are now a wizard and have to defeat a terrible ogre who is attacking your village. To do this:
-1) Create a varibale called "name" and set it's value to whatever you want your wizard name to be.
+1) Create a variable called "name" and set it's value to whatever you want your wizard name to be.
 2) Uncomment the last line below "step 4" WITHOUT changing it in any way. This line is something called a "function call" and we will learn more about it later in the class. For now, all you need to know is uncommenting this line lets the computer load the game.
 ```python3
    #Uncomment this line to play the game
