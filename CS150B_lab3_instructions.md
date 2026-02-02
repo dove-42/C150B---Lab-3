@@ -4,7 +4,7 @@ Welcome to lab! This lab is going to give you some more practice with varibles, 
 
 ## Step 1 (Comments)
 Before getting into printing and type casting, one useful feature most programming languages have are **comments**! 
-Comments are a great way to give information within the code without interfering with the code itself, almost like a description to a picture! 
+Comments are a great way to give information within the code without interfering with the code itself-- like a description to a picture! 
 Not only that, but you can comment out any code you don't want to test or to set aside code.
 ```python3
 # Hello! I am a comment!
@@ -29,7 +29,52 @@ print("I'm code that wants to be commented!")
 
 
 ## Step 2 (Printing and Variables)
-FIXME - fill in with Gino's instructions for step 2
+**Printing** and **Variables** are some of the most important things to learn when it comes to coding. Understanding these concepts can help you write, test, and read code!
+
+Thats cool and all, but what are they?
+
+**PRINTING**: You have seen print statements throughout the labs and lecture, but what do they actually do?
+```python3
+print("Hello!")
+```
+Lets break it down!
+- The word **print** is a built-in function for Python, meaning it will have specific rules. In this case, **print** means it will display output to the console for a user to see!
+- The parenthesis **()** are used to surround what we want to be **printed** out! In the example, **Hello!** is in the parenthesis, so it will be printed out!
+- The quotes **" "** mean whatever is in them, which this case is **Hello!**, will be **printed** out exactly how it looks! This makes it possible to write!
+
+**BENEFITS TO PRINTING**: Showing program results, debugging, writing, formatting, user interaction, etc.
+
+**VARIABLES**: The process of storing information by a name you create:
+```python3
+boxes = "bunch of data and stuff"
+storage = "4"
+print("please put the " + boxes + " in storage " + storage + ".")
+```
+Lets break it down!
+- The word **boxes** and **storage** are the variables in the code. Variables can be named whatever you like, however naming it related to what your doing can help keep track of what your code does!
+- The equal sign **=** is what connects are variable. Without this, a variable wont be created and have anything in it!
+- The **"bunch of data and stuff"** and **"4"** is what is being stored in the variables! This means whenever we type **boxes** or **storage**, it will instead be what is stored in them!
+- In the print, you can see that are variables **boxes** and **storage** dont have quotes. This makes it so it will be connected back to the variable we created! If it was surrounded by quotes, it will only produce the word "boxes" and not actually what is inside **boxes**, which in this example is **"bunch of data and stuff"**.
+
+**BENEFITS TO VARIABLES**: Be able to store, duplicate, label, manage and manipulate data, etc.
+
+
+### **Step 2 will get you practice in understanding what and how to make prints and variables!**
+
+1) Fill in the error to make the print work!
+2) Fix the error to make the print work!
+3) Create a print statement by copying and pasting the line below:
+```python3
+Your a Wizard Harry!
+```
+4) Fill in the error to make the variable work!
+5) Fix the error to make the variable work!
+6) Create a print statement using both variables above and format it like the line below! If done correctly, it should look like this:
+```
+Wizard vs Orge. Who will win?
+```
+Remember, you can use the plus **+** (no space) or the comma **,** (adds space) to connect strings and variables together! 
+**NOTE:** Hard coding is the process of typing the answer without actually using any variables. If you type this line in without variables, you won't get points!
 
 ## Step 3 (Input and Casting)
 In this step you will be working with input and casting. By now you have probably run into TypeErrors while coding. These happen when you try to do an action that doesn't make sense for a given variable's type--like trying to do math on strings. The types you need to know for this lab are:
