@@ -1,6 +1,13 @@
 from DungeonGame import play_game, check_hp
 
 #step 1
+#Name: Billy, Major: General Computer Science
+
+# Debri = "Junk"
+# print("Boulder")
+# print("Rubble")
+# print("Thats a lot of " + Debri + "!")
+
 #step 2
 
 
