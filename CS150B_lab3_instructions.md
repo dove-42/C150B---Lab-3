@@ -76,6 +76,7 @@ Your a Wizard Harry!
 Wizard vs Orge. Who will win?
 ```
 Remember, you can use the plus **+** (no space) or the comma **,** (adds space) to connect strings and variables together! 
+
 **NOTE:** Hard coding is the process of typing the answer without actually using any variables. If you type this line in without variables, you won't get points!
 
 ## Step 3 (Input and Casting)
