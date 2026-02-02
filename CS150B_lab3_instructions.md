@@ -53,7 +53,7 @@ storage = "4"
 print("please put the " + boxes + " in storage " + storage + ".")
 ```
 Lets break it down!
-- The word **boxes** and **storage** are the variables in the code. Variables can be named whatever you like, however naming it related to what your doing can help keep track of what your code does!
+- The word **boxes** and **storage** are the variables in the code. Variables can be named whatever you like, however naming it related to what your doing can help keep track of what your code does! Plus, adding special characters like !, #, or & will create a **NameError**, as these arent allowed when making a name!
 - The equal sign **=** is what connects are variable. Without this, a variable wont be created and have anything in it!
 - The **"bunch of data and stuff"** and **"4"** is what is being stored in the variables! This means whenever we type **boxes** or **storage**, it will instead be what is stored in them!
 - In the print, you can see that are variables **boxes** and **storage** dont have quotes. This makes it so it will be connected back to the variable we created! If it was surrounded by quotes, it will only produce the word "boxes" and not actually what is inside **boxes**, which in this example is **"bunch of data and stuff"**.
